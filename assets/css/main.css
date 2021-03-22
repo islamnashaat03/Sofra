@@ -7,11 +7,19 @@ img {max-width: 100%;}
     --mainColor2:#ff4057;
     --mainColor3:#240041;
 }
+a { text-decoration: none; background-color: inherit; color: inherit;}
+a:hover{background-color: inherit; color: inherit;}
 .card {
     margin: 20px 0 ;
     border-radius: 30px;
     text-align: center;
     width: 100%;
+    position: relative;
+}
+.card .fa-times-circle {
+    position: absolute;
+    top: 12px;
+    right: 12px;
 }
 .card h4 {color: var(--mainColor2); font-weight: bold;}
 .card .card-text {font-size: 13px ;color: #7c7c7c;}
@@ -27,8 +35,8 @@ img {max-width: 100%;}
     /* START NAV BAR   */
 .navbar{padding: 10px 0;}
 .navbar .dropdown{display: flex;align-items: center;}
-.navbar .dropdown .dropdown-item i {color:black ;}
-.navbar .dropdown .dropdown-item  {color:black ;}
+.navbar .dropdown .dropdown-item i {color:#300e4c;}
+.navbar .dropdown .dropdown-item  {color:#725b84 ;}
 .navbar .dropdown-toggle::after{display:none;}
 .navbar i {color: var(--mainColor);}
 .navbar-nav .form-inline  {position: relative;}
@@ -88,7 +96,7 @@ header .kfc ul a:nth-child(n+4){color: var(--mainColor3);}
 header .kfc ul li i {margin-right: 15px;font-size: 30px;}
     /* END HEADER  */
     /* START MEALS OFFER  */
-.meal-offers {background-image: url(../imgs/favor-bg.png);}
+.meal-offers {background-image: url(../imgs/favor-bg.png);background-size: cover;}
     /* START FOOTER  */
 footer {
     background-image:url(../imgs/footerbg.png);
@@ -107,7 +115,28 @@ footer .footer-right-side a{
 footer .footer-left-side img{width: 300px; margin: 35px 0 80px ;}
     /* END FOOTER  */
     /* START RESTURANT SELLER PAGE   */
-
+.meal-offers .meal-head {
+    color: var(--mainColor3);
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+.meal-offers .meal-head h2 {font-weight: bold; margin: 30px 0;}
+.meal-offers .meal-btn{
+    justify-content: center;
+    align-items: center; 
+}
+.meal-offers .meal-btn a {
+    background-image: linear-gradient(to bottom, #e32f52, #d42651, #c41d4f, #b5154d, #a50c4a);
+    color: #fff;
+    padding: 15px 85px;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 50px;
+    margin: 20px 0;
+    border: 0;
+    outline: 0;
+}
     /* END RESTURANT SELLER PAGE  */
     /* START MEDIA */
     @media (min-width :992px ){
@@ -115,4 +144,4 @@ footer .footer-left-side img{width: 300px; margin: 35px 0 80px ;}
         .form-inline .form-control{margin: 0 40px;}
         .navbar .navbar-brand{margin: 0  2rem;}
         .navbar .nav-item img{transform: translate(-135px, 0px);} 
-    }
+}
