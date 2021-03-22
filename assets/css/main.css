@@ -1,0 +1,118 @@
+    /* START GLOBAL  */
+*{box-sizing: border-box;}
+body{font-family: 'Cairo', sans-serif ; height: 2000px;  }
+img {max-width: 100%;}
+:root {
+    --mainColor:#ec3454;
+    --mainColor2:#ff4057;
+    --mainColor3:#240041;
+}
+.card {
+    margin: 20px 0 ;
+    border-radius: 30px;
+    text-align: center;
+    width: 100%;
+}
+.card h4 {color: var(--mainColor2); font-weight: bold;}
+.card .card-text {font-size: 13px ;color: #7c7c7c;}
+.card p {color: var(--mainColor2); font-size: 20px; font-weight: bold; margin-right:8px ;}
+.card .btn {
+    background-image: url(../imgs/rest-bg.jpg);
+     background-size: contain;
+     padding: 10px 70px ;
+     border-radius: 10px;
+     color: white;
+    }
+    /* END GLOBAL  */
+    /* START NAV BAR   */
+.navbar{padding: 10px 0;}
+.navbar .dropdown{display: flex;align-items: center;}
+.navbar .dropdown .dropdown-item i {color:black ;}
+.navbar .dropdown .dropdown-item  {color:black ;}
+.navbar .dropdown-toggle::after{display:none;}
+.navbar i {color: var(--mainColor);}
+.navbar-nav .form-inline  {position: relative;}
+.form-inline .form-control{
+    width: 100%;
+    background-color: #d3d3d3;
+    border-color: #d3d3d3;
+}
+.navbar-nav .form-inline button  {
+    position: absolute;
+    left: 20px;
+    background-color: inherit;
+    border: 0;
+    outline: 0;
+    padding: 0;
+}
+.navbar-light .navbar-toggler-icon{background-image: none;}
+.navbar-light .navbar-toggler{border:none;outline: 0;}
+.navbar .dropleft .dropdown-toggle::before{display: none;}
+.navbar .dropleft button { 
+      border: none;
+      outline: 0;
+      background-color: inherit;
+}
+    /* END NAV BAR   */
+    /* START HEADER  */
+header{
+    background-image: url(../imgs/rest-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .kfc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header .kfc img {width: 250px ;}
+header .kfc  p {
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 20px;
+}
+header .kfc ul {
+    background-color:#fff ;
+    width: 100%;
+    padding: 20px;
+    border-radius: 50px;
+}
+header .kfc ul a:nth-child(-n+3) {color:var(--mainColor2);   }
+header .kfc ul a:nth-child(n+4){color: var(--mainColor3);}
+header .kfc ul li i {margin-right: 15px;font-size: 30px;}
+    /* END HEADER  */
+    /* START MEALS OFFER  */
+.meal-offers {background-image: url(../imgs/favor-bg.png);}
+    /* START FOOTER  */
+footer {
+    background-image:url(../imgs/footerbg.png);
+    background-size: cover;
+    color: #fff;
+}
+footer .footer-right-side h4 {display: inline-block; margin: 20px 0;}
+footer .footer-right-side img {width: 35px; margin: 20px 5px 20px 5px ;}
+footer .footer-right-side p{margin: 20px 0 ;}
+footer .footer-right-side a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 35px;
+    margin: 30px 15px ;
+}
+footer .footer-left-side img{width: 300px; margin: 35px 0 80px ;}
+    /* END FOOTER  */
+    /* START RESTURANT SELLER PAGE   */
+
+    /* END RESTURANT SELLER PAGE  */
+    /* START MEDIA */
+    @media (min-width :992px ){
+        .navbar .dropdown{margin: 0 30px;}
+        .form-inline .form-control{margin: 0 40px;}
+        .navbar .navbar-brand{margin: 0  2rem;}
+        .navbar .nav-item img{transform: translate(-135px, 0px);} 
+    }
