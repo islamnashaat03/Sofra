@@ -1,6 +1,6 @@
     /* START GLOBAL  */
 *{box-sizing: border-box;}
-body{font-family: 'Cairo', sans-serif ; height: 2000px;  }
+body{font-family: 'Cairo', sans-serif ; height: 2000px; height: 20000px;  }
 img {max-width: 100%;}
 :root {
     --mainColor:#ec3454;
@@ -30,7 +30,13 @@ a:hover{background-color: inherit; color: inherit;}
      padding: 10px 70px ;
      border-radius: 10px;
      color: white;
-    }
+     border: 0; 
+     outline: 0;
+}
+.card .icon img {height: 40px;}
+.card .icon p {margin-top: 5px ;}
+ul a:nth-child(-n+3){    color: var(--mainColor2);}
+ul a:nth-child(n+4){color: var(--mainColor3);}
     /* END GLOBAL  */
     /* START NAV BAR   */
 .navbar{padding: 10px 0;}
@@ -138,10 +144,140 @@ footer .footer-left-side img{width: 300px; margin: 35px 0 80px ;}
     outline: 0;
 }
     /* END RESTURANT SELLER PAGE  */
+    /* START MEAL PAGE  */
+.meal-details{
+    background-image: url(../imgs/meal-bg.jpg);
+    background-size: cover;
+}
+.meal-details .icon {margin: 15px 0;}
+.meal-details .icon img {height: 40px ;}
+.meal-details .icon p {
+    margin: 0 20px ;
+    color: var(--mainColor3);
+    font-weight: bold;
+
+}
+.meal-details .meal-description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--mainColor3);
+    margin-top: 20px;
+}
+.meal-details .meal-description img {width: 100%;}
+.meal-details .meal-description h3{
+    font-weight: bold;
+    color: inherit;
+    margin: 15px auto;
+}
+.meal-details .meal-description p {color: inherit;font-size: 18px;font-weight: bold;}
+.information .icon p {
+    margin-right: 5px;
+    color: var(--mainColor2);
+    font-weight: bold;
+    margin-top: 5px;
+    font-size: 18px;
+}
+.information .rating {margin-top: 20px;}
+.information .rating h4 {
+    border-right: 2px solid var(--mainColor3);
+    padding: 10px ;
+    color: var(--mainColor);
+    font-weight: bold;
+}
+.information .rating span {
+    margin-right: 15px;
+    font-size: 15px;
+}
+.information .rating .rating-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #e5e5e5;
+    border-radius: 30px ;
+    margin: 20px auto;
+}
+.information .rating .rating-details ul {
+    background-color: #fff;
+    width:fit-content;
+    padding: 10px 25px ;
+    border-radius: 50px;
+    font-size: 22px;
+    margin: 1rem 0;
+}
+.information .rating .rating-details ul li {
+    margin: 0 3px ;
+}
+.information .rating .rating-details p {
+    color: var(--mainColor2);
+    margin: 15px 0;
+    font-size: 20px;
+}
+.information .add-your-rate h4{
+    border-right: 2px solid var(--mainColor3);
+    padding: 10px;
+    color: var(--mainColor);
+    font-weight: bold;
+}
+.information .add-your-rate div:first-of-type{justify-content: center;}
+.information .add-your-rate ul {
+    margin-top: -14px;
+    padding: 10px 25px;
+    border-radius: 30px;
+    width:fit-content;
+    font-size: 22px;
+}
+.information .add-your-rate ul li {margin: 0 3px ;}
+.information .add-your-rate textarea {
+    background-color: #f9f9f9;
+    width: 100%;
+    resize: none;
+    border: 0;
+    outline: 0;
+    border-radius: 30px;
+    box-shadow: 6px 6px 5px 0px rgba(231,231,231,0.75);
+    -webkit-box-shadow: 6px 6px 5px 0px rgba(231,231,231,0.75);
+    -moz-box-shadow: 6px 6px 5px 0px rgba(231,231,231,0.75);
+}
+.information .add-your-rate textarea::placeholder{
+    padding: 20px;
+    color: #a8a3a3;
+    font-size: 18px;
+    font-weight: bold;
+}
+.information  button {
+    background-image: linear-gradient(to bottom, #e32f52, #d42651, #c41d4f, #b5154d, #a50c4a);
+    color: #fff;
+    padding: 5px 50px;
+    border-radius: 30px;
+    width: 200px;
+    border: 0;
+    outline: 0;
+    font-size: 22px;
+}
+.information  button:hover{color: var(--mainColor3);}
+.information h4{
+    border-right: 2px solid var(--mainColor3);
+    padding: 10px;
+    color: var(--mainColor);
+    font-weight: bold;
+}
+/* .more-meals {
+    background-image: url(../imgs/offers-bg.jpg);
+    background-size: cover;
+} */
+.more-meals .owl-carousel .image-in img  {
+    min-height: 100%;
+    cursor: pointer;
+}
+    /* END MEAL PAGE  */
     /* START MEDIA */
     @media (min-width :992px ){
         .navbar .dropdown{margin: 0 30px;}
         .form-inline .form-control{margin: 0 40px;}
         .navbar .navbar-brand{margin: 0  2rem;}
         .navbar .nav-item img{transform: translate(-135px, 0px);} 
+        .meal-details .icon p{font-size: 35px ;}
 }
