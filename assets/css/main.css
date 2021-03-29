@@ -1,5 +1,5 @@
     /* START GLOBAL  */
-*{box-sizing: border-box;}
+*{box-sizing: border-box; }
 body{font-family: 'Cairo', sans-serif ; height: 2000px; height: 20000px;  }
 img {max-width: 100%;}
 :root {
@@ -476,24 +476,24 @@ footer .footer-left-side img{width: 300px; margin: 35px 0 80px ;}
 /* END SEARCH RESTAURANT */
 /* START OFFERS  */
 .offers {
-    height: 75vh;
 
 }
-.offers .offers-right-side {}
 .offers .offers-left-side {
     background-image: url(../imgs/offers-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 50px;
+    padding: 35px;
     color: #fff;
     text-align: center;
     border-radius: 15px;
+    
     
 }
 .offers .offers-left-side p {
     font-size: 25px;
     line-height: 2;
-    padding-right: 35px;
+    padding: 0 15px;
+    margin: 20px 0 30px ;
 }
 .offers .offers-left-side .btn {
     background-image: linear-gradient(to top, #a20a4a, #dc3c50);
