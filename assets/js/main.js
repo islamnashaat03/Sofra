@@ -15,10 +15,20 @@ $('.owl-carousel').owlCarousel({
             loop:true
         },
         1000:{
-            items:4,
+            items:3,
             nav:false,
             loop:true,
             dots:true
         }
     }
 })
+$(".my-rating-4").starRating({
+    totalStars: 5,
+    starShape: 'rounded',
+    starSize: 40,
+    emptyColor: 'lightgrey',
+    hoverColor: '#ff4057',
+    activeColor: '#ff4057',
+    rtl:true,
+    useGradient: false
+  });
