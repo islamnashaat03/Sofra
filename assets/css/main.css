@@ -481,7 +481,8 @@ footer .footer-left-side img{width: 300px; margin: 35px 0 80px ;}
 /* START REGISTER PAGE  */
 .register {
     background-image: url(../imgs/Group\ 1040.png);
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .register .register-form {
     margin: 50px auto;
@@ -494,7 +495,7 @@ footer .footer-left-side img{width: 300px; margin: 35px 0 80px ;}
 }
 .register .register-form .form-image {margin: -30px 0 30px ;}
 .register .register-form .form-image  img {height: 160px;}
-.register .register-form .form-group {margin: 50px;}
+.register .register-form .form-group {margin: 25px}
 .register .register-form .form-group .form-control {
     background-color: #f3f3f3;
     height: calc(3em + .75rem + 2px);
@@ -523,7 +524,57 @@ footer .footer-left-side img{width: 300px; margin: 35px 0 80px ;}
     border: 0;
     outline: 0;
 }
-
+.register .register-form .form-group-edit {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+.register .register-form .form-group select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 10px;
+    text-overflow: '';
+    background-color: transparent;
+    z-index: 3;
+    color: #b6abbe;
+     font-weight: bold;
+}
+.register .register-form .form-group-edit  {background-color: #f3f3f3; border-radius: 15px;}
+.register .register-form .form-group-edit i {
+    position: absolute;
+    left: 20px;
+    z-index: 0;
+}
+.register .register-form .form-group-edit .form-control-edit {
+    background-color: transparent;
+    cursor: pointer;
+}
+.register .register-form .form-group p {
+    color: var(--mainColor3);
+    font-weight: bold;
+    font-size: 14px;
+}
+.register .register-form .form-group span a {font-size: 14px;}
+.register .register-form .form-group #img {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+.register .register-form .upload-photo  p {
+    color: var(--mainColor3);
+    font-weight: bold;
+    font-size: 18px ;
+    margin-left: 15px;
+}
+.register .register-form .upload-photo img {
+    height: 75px ;
+    margin-right: 15px ;
+    box-shadow: 5px 5px 5px 0px rgba(237,237,237,0.75);
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(237,237,237,0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(237,237,237,0.75);
+    border-radius: 5px;
+}
 /* END REGISTER PAGE  */
     /* END HOME PAGE  */
     /* START MEDIA */
@@ -541,6 +592,7 @@ footer .footer-left-side img{width: 300px; margin: 35px 0 80px ;}
             width: 28rem;
             height: 14rem;
         }
+        .register .register-form .form-group {margin: 50px;}
 }
 
 

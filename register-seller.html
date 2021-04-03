@@ -14,7 +14,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="assets/css/main.css">
-  <title>Register </title>
+  <title>Regiser Seller </title>
 </head>
 
 <body>
@@ -69,35 +69,71 @@
 <!-- END NAV BAR  -->
 <!-- START REGISTER  -->
     <section class="register"> 
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-9 offset-sm-2">
-                    <form action="" method="" name="">
-                        <div class="register-form"> 
-                            <div class="text-center form-image">
-                                <img src="assets/imgs/use-img-1.png" alt="">
-                            </div>
-                            <div class="form-group ">
-                                <input type="text" class="form-control" placeholder="الاسم ">
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control" placeholder="البريد الالكتروني ">
-                            </div>
-                            <div class="text-center my-4">
-                                <button type="submit" class="btn">دخول </button>
-                            </div>
-                            <div class="flex-even my-4 " style="justify-content: space-around;">
-                                <a href="#" class="">مستخدم جديد ؟ </a>
-                                <a href="#"> نسيت كلمة السر ؟</a>
-                            </div>
-                            <div class="text-center my-4 mb-5">
-                                <button type="submit" class="btn">إنشاء حساب الان  </button>
-                            </div>
-                        </div>
-                    </form>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-9 offset-sm-2">
+            <form action="" method="" name="">
+              <div class="register-form"> 
+                <div class="text-center form-image">
+                  <img src="assets/imgs/use-img-1.png" alt="">
                 </div>
-            </div>
+                <div class="form-group ">
+                  <input type="text" class="form-control" placeholder="الاسم ">
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" placeholder="البريد الالكتروني ">
+                </div>
+                <div class="form-group">
+                  <input type="tel" class="form-control" placeholder="الجوال ">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="المدينة  ">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="الحي  ">
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" placeholder="كلمة المرور  ">
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" placeholder="اعادة كلمة المرور ">
+                </div>
+                <div class="form-group form-group-edit">
+                  <select name="" id="" class="form-control form-control-edit">
+                    <option value="" selected disabled hidden class="fir"> التصنيفات </option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                  <i class="fas fa-caret-down fa-2x"></i>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="الحد الادني للطلب  ">
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" placeholder="رسوم التوصيل  ">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="الواتس اب   ">
+                </div>
+                <div class="form-group upload-photo d-flex " style="align-items: center;">
+                  <form action="/action_page.php">
+                    <p>صورة المتجر </p>
+                    <label for="img"><img src="assets/imgs/default-image.jpg" alt=""> </label>
+                    <input type="file" id="img" name="img" accept="image/*">
+                  </form>
+                </div>
+                <div class="form-group">
+                  <p>بإنشائك حساب توافق علي <span><a href="#">شروط الاستخدام </a></span> الخاصة بسفرة </p>
+                </div>
+                <div class="text-center my-4">
+                  <button type="submit" class="btn">دخول </button>
+                </div> 
+              </div>
+            </form>
+          </div>
         </div>
+      </div>
     </section>
 <!-- END REGISTER  -->
 <!-- START FOOTER  -->
