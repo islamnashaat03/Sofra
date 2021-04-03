@@ -33,3 +33,7 @@ $(".my-rating-4").starRating({
     rtl:true,
     useGradient: false
   });
+
+  $(function () {
+    $(".date-picker").datepicker();
+});

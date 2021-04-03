@@ -20,7 +20,7 @@
 
 <body>
 <!-- START NAV BAR  -->
-    <nav class="navbar navbar-collapse-lg navbar-light bg-light">
+  <nav class="navbar navbar-collapse-lg navbar-light bg-light">
     <div class="navbar-brand col-md-5 col flex-even">
       <a  href="#"><i class="fas fa-shopping-cart fa-2x"></i></a>
       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -66,115 +66,89 @@
         <button class="btn btn-outline-success my-2 my-sm-0 " type="submit">Search</button>
       </form>
     </div>
-    </nav>
+  </nav>
 <!-- END NAV BAR  -->
-<!-- START REGISTER  -->
-    <section class="register"> 
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-9 offset-sm-2">
+<!-- START ADD NEW OFFER  -->
+  <section class="add-new-offer"> 
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-9 offset-sm-2">
+          <div class="text-center">
+            <h2>اضافة عرض جديد </h2>
+          </div>
+          <div class="add-new-offer-form">
             <form action="" method="" name="">
-              <div class="register-form"> 
-                <div class="text-center form-image">
-                  <img src="assets/imgs/use-img-1.png" alt="">
-                </div>
-                <div class="form-group ">
-                  <input type="text" class="form-control" placeholder="الاسم ">
-                </div>
-                <div class="form-group">
-                  <input type="email" class="form-control" placeholder="البريد الالكتروني ">
-                </div>
-                <div class="form-group">
-                  <input type="tel" class="form-control" placeholder="الجوال ">
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="المدينة  ">
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="الحي  ">
-                </div>
-                <div class="form-group">
-                  <input type="password" class="form-control" placeholder="كلمة المرور  ">
-                </div>
-                <div class="form-group">
-                  <input type="password" class="form-control" placeholder="اعادة كلمة المرور ">
-                </div>
-                <div class="form-group form-group-edit">
-                  <select name="" id="" class="form-control form-control-edit">
-                    <option value="" selected disabled hidden class="fir"> التصنيفات </option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                  </select>
-                  <i class="fas fa-caret-down fa-2x"></i>
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="الحد الادني للطلب  ">
-                </div>
-                <div class="form-group">
-                  <input type="email" class="form-control" placeholder="رسوم التوصيل  ">
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="الواتس اب   ">
-                </div>
-                <div class="form-group upload-photo d-flex " style="align-items: center;">
-                  <form action="/action_page.php">
-                    <p>صورة المتجر </p>
-                    <label for="img"><img src="assets/imgs/default-image.jpg" alt=""> </label>
-                    <input type="file" id="img" name="img" accept="image/*">
-                  </form>
-                </div>
-                <div class="form-group">
-                  <p>بإنشائك حساب توافق علي <span><a href="#">شروط الاستخدام </a></span> الخاصة بسفرة </p>
-                </div>
-                <div class="text-center my-4">
-                  <button type="submit" class="btn">دخول </button>
-                </div> 
+              <div class="form-group upload-photo text-center">
+                <form action="">
+                  <label for="img"><img src="assets/imgs/default-image.jpg" alt=""> </label>
+                  <input type="file" id="img" name="img" accept="image/*">
+                  <p>صورة العرض  </p>
+                </form>
               </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="اسم العرض ">
+              </div>
+              <div class="form-group">
+                <textarea name="" id="" cols="30" rows="4" placeholder="وصف مختصر " class="form-control"></textarea>
+              </div>
+              <div class="form-group">
+                <input type="text " class="form-control" placeholder="السعر ">
+              </div>
+              <div class=" date-form text-center">
+                <input type="text" class="date-picker " id="datepicker" placeholder=" من  ">
+                <input type="text" class="date-picker" id="datepicker" placeholder=" الي  ">
+              </div>
+              <div class="text-center my-4 ">
+                <button type="submit" class="btn">إضافة  </button>
+              </div> 
             </form>
           </div>
         </div>
       </div>
-    </section>
-<!-- END REGISTER  -->
+    </div>
+  </section>
+<!-- END ADD NEW OFFER  -->
+
+
+
 <!-- START FOOTER  -->
-    <footer>
+  <footer>
     <div class="container-fluid">
-      <div class="row">
+        <div class="row">
         <div class="col-sm-6">
-          <div class="footer-right-side text-center text-sm-left">
+            <div class="footer-right-side text-center text-sm-left">
             <img src="assets/imgs/edit.png" alt="">
             <h4 class="h2">من نحن </h4>
             <div class="col-sm-9">
-              <p class="lead">لوريم ايبسوم هو لموكج افتراضي يوضع في التعاميم العرض على العميل ليلصور طريقة وضع اللصوص
+                <p class="lead">لوريم ايبسوم هو لموكج افتراضي يوضع في التعاميم العرض على العميل ليلصور طريقة وضع اللصوص
                 بالتصاميم سواء كالت تصاميم مطبوعه ... بروشور او ملاير على سبيل المثال - ... او لماكح مواقع الارلت </p>
             </div>
             <div class="text-center text-sm-left my-3">
-              <a href="#"><i class="fab fa-instagram "></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram "></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
             </div>
-          </div>
+            </div>
 
         </div>
         <div class="col-sm-6 text-center text-sm-right">
-          <div class="footer-left-side">
+            <div class="footer-left-side">
             <img src="assets/imgs/sofra logo.png" alt="">
-          </div>
+            </div>
         </div>
-      </div>
+        </div>
     </div>
-    </footer>
+  </footer>
 <!-- END FOOTER  -->
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+ integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+ crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+ integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
 </script>
 <script src="https://cdn.rtlcss.com/bootstrap/v4.5.3/js/bootstrap.min.js"
-integrity="sha384-VmD+lKnI0Y4FPvr6hvZRw6xvdt/QZoNHQ4h5k0RL30aGkR9ylHU56BzrE2UoohWK" crossorigin="anonymous">
+ integrity="sha384-VmD+lKnI0Y4FPvr6hvZRw6xvdt/QZoNHQ4h5k0RL30aGkR9ylHU56BzrE2UoohWK" crossorigin="anonymous">
 </script>
 <script src="assets/plugins/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
 <script src="assets/js/jquery.star-rating-svg.min.js"></script>

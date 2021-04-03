@@ -16,7 +16,7 @@ a:hover{background-color: inherit; color: inherit; text-decoration: none;}
     width: 100%;
     position: relative;
 }
-.card .fa-times-circle {
+.card .fas .fa-times-circle {
     position: absolute;
     top: 12px;
     right: 12px;
@@ -44,6 +44,12 @@ a:hover{background-color: inherit; color: inherit; text-decoration: none;}
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+.flex-coloum {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .btn:focus{outline: 0; border: 0; box-shadow: none;}
 .form-control:focus{outline: 0; border:0; box-shadow: none;}
@@ -117,6 +123,7 @@ header .kfc ul li i {margin-right: 15px;font-size: 30px;}
     /* END HEADER  */
     /* START MEALS OFFER  */
 .meal-offers {background-image: url(../imgs/favor-bg.png);background-size: cover;}
+    /* END MEALS OFFER  */
     /* START FOOTER  */
 footer {
     background-image:url(../imgs/footerbg.png);background-size: cover;color: #fff;}
@@ -478,6 +485,7 @@ footer .footer-left-side img{width: 300px; margin: 35px 0 80px ;}
 .download-our-app .app-right-side h3 {margin: 20px auto 100px;}
 .download-our-app .app-right-side a img {height: 80px;margin-bottom: 120px;}
 /* END DOWNLOAD OUR APP  */
+/* END HOME PAGE  */
 /* START REGISTER PAGE  */
 .register {
     background-image: url(../imgs/Group\ 1040.png);
@@ -576,7 +584,127 @@ footer .footer-left-side img{width: 300px; margin: 35px 0 80px ;}
     border-radius: 5px;
 }
 /* END REGISTER PAGE  */
-    /* END HOME PAGE  */
+/* START ADD NEW OFFER PAGE  */
+.add-new-offer h2{
+    color: var(--mainColor);
+    font-weight: bold;
+    margin-top: 20px;
+}
+.add-new-offer .add-new-offer-form {
+    margin: 50px auto;
+    background-color: #ececec;
+    border: 1px solid #f3f3f3;
+    box-shadow: 1px 1px 25px 3px rgba(228,228,228,0.75);
+    -webkit-box-shadow: 1px 1px 25px 3px rgba(228,228,228,0.75);
+    -moz-box-shadow: 1px 1px 25px 3px rgba(228,228,228,0.75);
+    border-radius: 30px;
+}
+.add-new-offer .add-new-offer-form .form-group #img {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+.add-new-offer .add-new-offer-form .upload-photo {
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.add-new-offer .add-new-offer-form .upload-photo img {
+    height: 75px ;
+    margin: 15px ;
+    box-shadow: 5px 5px 5px 0px rgba(239,239,239,0.75);
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(239,239,239,0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(239,239,239,0.75);
+    border-radius: 5px;
+}
+.add-new-offer .add-new-offer-form .upload-photo p {
+    color: var(--mainColor3);
+    font-weight: bold;
+    font-size: 14px;
+}
+.add-new-offer .add-new-offer-form .form-group {margin: 25px;}
+.add-new-offer .add-new-offer-form .form-group .form-control {
+    background-color: #f3f3f3;
+    height: calc(3em + .75rem + 2px);
+    border-radius: 15px;
+    border: 0;
+    padding-right: 25px;
+    font-size: 18px;
+}
+.add-new-offer .add-new-offer-form textarea {
+    resize: none; 
+    height: auto !important;
+}
+.add-new-offer .add-new-offer-form .btn {
+    background-image: linear-gradient(to top, #a20a4a, #dc3c50);
+    width: 250px;
+    padding: 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border: 0;
+    outline: 0;
+}
+.add-new-offer .add-new-offer-form .date-form .date-picker {
+    background-color: #e5e5e5;
+    border: 0;
+    outline: 0;
+    padding: 8px 3px ;
+    border-radius: 5px;
+    width: 120px;
+    margin: 10px ;
+}
+.add-new-offer-form .date-form input {
+    background-image: url(../imgs/calendar-alt-regular.svg);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position-y: center;
+    background-position-x: 15px;
+    color: #ada1b6;
+}
+/* END ADD NEW OFFER PAGE  */
+/* START CART PAGE  */
+.cart {
+  background-image: url(../imgs/cart-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.cart .card {
+    padding: 20px;
+    margin: 40px 0 ;
+}
+.cart .card img {
+    height: 120px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+.cart .card p {
+    color: var(--mainColor3);
+}
+
+.cart .card label {
+    color: var(--mainColor3);
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 8px;
+}
+.cart .card input  {
+    border: 0;
+    outline: 0;
+    background-color: #ececec;
+    width: 60px;
+}
+.cart .card a {
+    background: var(--mainColor);
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+    padding: 6px 50px;
+    border-radius: 20px;
+}
+/* END CART PAGE  */
     /* START MEDIA */
     @media (max-width:991px) {
         .navbar .img {margin: 15px 0;}
@@ -592,7 +720,13 @@ footer .footer-left-side img{width: 300px; margin: 35px 0 80px ;}
             width: 28rem;
             height: 14rem;
         }
-        .register .register-form .form-group {margin: 50px;}
+        .register .register-form .form-group,
+        .add-new-offer .add-new-offer-form .form-group {margin: 50px;}
+        .cart .card {
+            flex-direction: row;
+            width: 35rem;
+            padding: 20px;
+        }
 }
 
 
