@@ -19,42 +19,55 @@
   <link rel="stylesheet" href="assets/css/main.css">
   <title>meal page </title>
 </head>
-
 <body>
   <!-- START NAV BAR  -->
-    <div class="container-fluid bg-light">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="#"><i class="fas fa-shopping-cart fa-2x"></i></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-collapse-lg navbar-light bg-light">
+    <div class="navbar-brand col-md-5 col flex-even">
+      <a  href="#"><i class="fas fa-shopping-cart fa-2x"></i></a>
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="fas fa-user-circle fa-2x"></i>
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="meal-page.html"><i class="far fa-list-alt"></i> طلباتي </a>
+        <a class="dropdown-item" href="resturant-seller-page.html"><i class="fas fa-gift"></i> العروض </a>
+        <a class="dropdown-item" href="#"><i class="fas fa-envelope-square"></i> تواصل معنا </a>
+        <a class="dropdown-item" href="#"><i class="far fa-user"></i> حسابي </a>
+        <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> تسجيل الخروج </a>
+      </div>
+      <form class="form-inline form-edit">
+        <input class="form-control ml-sm-2" type="text" aria-label="Search">
+        <button class="" type="submit"><i class="fas fa-search"></i></button>
+      </form>
+
+    </div>
+    <div class="col-md-4 col-6 ">
+      <a href="#" class="navbar-brand" >
+        <img src="assets/imgs/sofra logo.png" alt="" style="width: 130px;">
+      </a>
+    </div>
+    <div class="col-md-2 col-6 text-right">
+      <button class="navbar-toggler " type=button data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"><i class="fas fa-hamburger fa-2x"></i></span>
       </button>
-          <div  class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">
-                  <i class="fas fa-user-circle fa-2x"></i>
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#"><i class="far fa-list-alt"></i> طلباتي </a>
-                  <a class="dropdown-item" href="#"><i class="fas fa-gift"></i> العروض </a>
-                  <a class="dropdown-item" href="#"><i class="fas fa-envelope-square"></i> تواصل معنا </a>
-                  <a class="dropdown-item" href="#"><i class="far fa-user"></i> حسابي </a>
-                  <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> تسجيل الخروج </a>
-                </div>
-              </li>
-              <form class="form-inline">
-                <input class="form-control mr-sm-2" type="text" aria-label="Search">
-                <button class="" type="submit"><i class="fas fa-search"></i></button>
-              </form>
-              <li class="nav-item" style="width: 150px ;">
-                <img src="assets/imgs/sofra logo.png" alt="">
-              </li>
-            </ul>
-          </div>
-        </nav>
     </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0" style="justify-content: flex-end;">
+        <input class="form-control mr-sm-2 " type="search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0 " type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
   <!-- END NAV BAR  -->
   <!-- START MEAL DETAILS  -->
     <section class="meal-details">
@@ -102,21 +115,25 @@
                 </div>
                 <div class="col-sm-5 text-center text-sm-left">
               <ul class="list-unstyled d-flex">
-                  <a href="">
-                    <li><i class="fas fa-star"></i></li>
-                  </a>
-                  <a href="">
-                    <li><i class="fas fa-star"></i></li>
-                  </a>
-                  <a href="">
-                    <li><i class="fas fa-star"></i></li>
-                  </a>
-                  <a href="">
-                    <li><i class="fas fa-star"></i></li>
-                  </a>
-                  <a href="">
-                    <li><i class="fas fa-star"></i></li>
-                  </a>
+                  <div class="three-stars-box d-flex">
+                    <a href="">
+                      <li class="three-stars"><i class="fas fa-star"></i></li>
+                    </a>
+                    <a href="">
+                      <li class="three-stars"><i class="fas fa-star"></i></li>
+                    </a>
+                    <a href="">
+                      <li class="three-stars"><i class="fas fa-star"></i></li>
+                    </a>
+                  </div>
+                  <div class="two-stars-box d-flex">
+                    <a href="">
+                      <li class="two-stars"><i class="fas fa-star"></i></li>
+                    </a>
+                    <a href="">
+                      <li class="two-stars"><i class="fas fa-star"></i></li>
+                    </a>
+                  </div>
               </ul>
                 </div>
               </div>
@@ -134,23 +151,27 @@
                   <p>بواسطة : محمد محروس </p>
                 </div>
                 <div class="col-sm-5 text-center text-sm-left">
-              <ul class="list-unstyled d-flex">
-                  <a href="">
-                    <li><i class="fas fa-star"></i></li>
-                  </a>
-                  <a href="">
-                    <li><i class="fas fa-star"></i></li>
-                  </a>
-                  <a href="">
-                    <li><i class="fas fa-star"></i></li>
-                  </a>
-                  <a href="">
-                    <li><i class="fas fa-star"></i></li>
-                  </a>
-                  <a href="">
-                    <li><i class="fas fa-star"></i></li>
-                  </a>
-              </ul>
+                  <ul class="list-unstyled d-flex">
+                    <div class="three-stars-box d-flex">
+                      <a href="">
+                        <li class="three-stars"><i class="fas fa-star"></i></li>
+                      </a>
+                      <a href="">
+                        <li class="three-stars"><i class="fas fa-star"></i></li>
+                      </a>
+                      <a href="">
+                        <li class="three-stars"><i class="fas fa-star"></i></li>
+                      </a>
+                    </div>
+                    <div class="two-stars-box d-flex">
+                      <a href="">
+                        <li class="two-stars"><i class="fas fa-star"></i></li>
+                      </a>
+                      <a href="">
+                        <li class="two-stars"><i class="fas fa-star"></i></li>
+                      </a>
+                    </div>
+                </ul>
                 </div>
               </div>
               <div class="row">
@@ -167,23 +188,27 @@
                   <p>بواسطة : محمد محروس </p>
                 </div>
                 <div class="col-sm-5 text-center text-sm-left">
-              <ul class="list-unstyled d-flex">
-                  <a href="">
-                    <li><i class="fas fa-star"></i></li>
-                  </a>
-                  <a href="">
-                    <li><i class="fas fa-star"></i></li>
-                  </a>
-                  <a href="">
-                    <li><i class="fas fa-star"></i></li>
-                  </a>
-                  <a href="">
-                    <li><i class="fas fa-star"></i></li>
-                  </a>
-                  <a href="">
-                    <li><i class="fas fa-star"></i></li>
-                  </a>
-              </ul>
+                <ul class="list-unstyled d-flex">
+                    <div class="three-stars-box d-flex">
+                      <a href="">
+                        <li class="three-stars"><i class="fas fa-star"></i></li>
+                      </a>
+                      <a href="">
+                        <li class="three-stars"><i class="fas fa-star"></i></li>
+                      </a>
+                      <a href="">
+                        <li class="three-stars"><i class="fas fa-star"></i></li>
+                      </a>
+                    </div>
+                    <div class="two-stars-box d-flex">
+                      <a href="">
+                        <li class="two-stars"><i class="fas fa-star"></i></li>
+                      </a>
+                      <a href="">
+                        <li class="two-stars"><i class="fas fa-star"></i></li>
+                      </a>
+                    </div>
+                </ul>
                 </div>
               </div>
               <div class="row">
@@ -222,6 +247,7 @@
          <h4>المزيد من اكلات هذا المطعم </h4>
     </div> 
   <!-- END INFORMATION  -->
+  <!-- START MORE MEALS  -->
     <div class="container-fluid">
     <div class="more-meals">
       <div class="owl-carousel owl-theme">
@@ -261,6 +287,15 @@
             </a>
           </div>
         </div>
+        <div class="image-in">
+          <img src="assets/imgs/burger-1.jpg" alt="" >
+          <div class="overlay">
+            <a href="index.html">
+              <p>برجر </p>
+              <p>اضغط للتفاصيل </p>
+            </a>
+          </div>
+        </div>
         <div class="image-in"> 
           <img src="assets/imgs/grill.jpg" alt="" >
           <div class="overlay">
@@ -275,6 +310,15 @@
           <div class="overlay">
             <a href="index.html">
               <p>سجق</p>
+              <p>اضغط للتفاصيل </p>
+            </a>
+          </div>
+        </div>
+        <div class="image-in">
+          <img src="assets/imgs/burger-1.jpg" alt="" >
+          <div class="overlay">
+            <a href="index.html">
+              <p>برجر </p>
               <p>اضغط للتفاصيل </p>
             </a>
           </div>
@@ -291,6 +335,7 @@
       </div>
     </div>
     </div>
+  <!-- END MORE MEALS  -->
   <!-- START FOOTER  -->
     <footer>
     <div class="container-fluid">
