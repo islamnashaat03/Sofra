@@ -695,24 +695,78 @@ footer .footer-left-side img{width: 300px; margin: 35px 0 80px ;}
     outline: 0;
     background-color: #ececec;
     width: 60px;
+    color: var(--mainColor);
 }
 .cart .card a {
     background: var(--mainColor);
     font-weight: bold;
-    font-size: 20px;
+    font-size: 30px;
     color: #fff;
     padding: 6px 50px;
     border-radius: 20px;
 }
 /* END CART PAGE  */
+/* START CONTACT US PAGE  */
+.contact-us {
+    background-image: linear-gradient(to top, #a20a4a, #dc3c50);
+    color: #fff;
+    padding: 20px;
+    margin: 70px auto;
+    border-radius: 15px;
+}
+.contact-us h2 {
+    font-weight: bold;
+    margin: 40px auto;
+}
+.contact-us .form-group .contact-form {
+    
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 18px;
+    text-indent: 10px;
+}
+.contact-us .form-group textarea::placeholder,
+.contact-us .form-group .contact-form::placeholder{
+    font-weight: bold;
+    font-size: 18px;
+    color: #c1c0c0;
+}
+.contact-us .form-group textarea {
+    border-radius: 15px ;
+    resize: none;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.contact-us .form-group .btn {
+    background: var(--mainColor3);
+    color: #fff;
+    width: 200px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 20px auto;
+} 
+.contact-us .form-group .check-box label {
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-us .form-group .check-box label input[type=checkbox], input[type=radio]{
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    margin-right: 8px;
+    background-color: var(--mainColor3);
+}
+/* END CONTACT US PAGE  */
     /* START MEDIA */
     @media (max-width:991px) {
         .navbar .img {margin: 15px 0;}
     }
     @media (min-width :992px ){
-        /* .navbar .dropdown{margin: 0 30px;} */
-        /* .form-edit .form-control{margin: 0 40px;} */
-        /* .navbar .navbar-brand{margin: 0  2rem;} */
         .meal-details .icon p{font-size: 35px ;}
         .information .rating .rating-details ul{margin: 15px 0;}
         .search-restaurant .card {
@@ -726,6 +780,10 @@ footer .footer-left-side img{width: 300px; margin: 35px 0 80px ;}
             flex-direction: row;
             width: 35rem;
             padding: 20px;
+        }
+        .contact-us .form-group {margin-bottom: 2rem;}
+        .contact-us .form-group .contact-form{
+            height: calc(3em + .75rem + 2px);
         }
 }
 
