@@ -31,8 +31,9 @@ $(".my-rating-4").starRating({
     hoverColor: '#ff4057',
     activeColor: '#ff4057',
     rtl:true,
-    useGradient: false
-  });
+    useGradient: false,
+    useFullStars:true
+});
 
   $(function () {
     $(".date-picker").datepicker();
