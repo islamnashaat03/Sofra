@@ -123,7 +123,7 @@ header .kfc ul li i {margin-right: 15px;font-size: 30px;}
     font-size: 13px ;
     color: #7c7c7c;
 }
-.meal-offers ..card p {
+.meal-offers .card p {
     color: var(--mainColor2);
      font-size: 20px;
       font-weight: bold;

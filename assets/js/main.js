@@ -27,14 +27,19 @@ $(".my-rating-4").starRating({
     totalStars: 5,
     starShape: 'rounded',
     starSize: 40,
-    emptyColor: 'lightgrey',
-    hoverColor: '#ff4057',
-    activeColor: '#ff4057',
+    emptyColor:'#240041',
+    hoverColor:'#ff4057',
+    activeColor:'#240041',
+    ratedColor: '#ff4057',
     rtl:true,
     useGradient: false,
-    useFullStars:true
+    useFullStars:true,
+    disableAfterRate:false,
+    
 });
 
   $(function () {
     $(".date-picker").datepicker();
 });
+
+
