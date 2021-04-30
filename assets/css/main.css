@@ -1,5 +1,6 @@
     /* START GLOBAL  */
 *{box-sizing: border-box; }
+html {scroll-behavior: smooth;}
 body{font-family: 'Cairo', sans-serif ; }
 img {max-width: 100%;}
 :root {
